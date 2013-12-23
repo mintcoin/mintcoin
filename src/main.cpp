@@ -33,7 +33,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0x43cac31596223882a9123adcb93639e5853ae9cccbbe54599bfd36b503a67fe4");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // MintCoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2049,9 +2049,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1387623887;
+        block.nTime    = 1387700169;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 0;
+        block.nNonce   = 650051;
 
 
         if (fTestNet)
@@ -2066,7 +2066,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
         assert(block.hashMerkleRoot == uint256("0xaab28ad3188ba16834aa75608c43d718c717ec5b9b44b00924f0380acff691a9"));
 
-if (true && block.GetHash() != hashGenesisBlock)
+if (false && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
