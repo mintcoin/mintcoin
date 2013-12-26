@@ -1,5 +1,8 @@
-MintCoin
+MintCoin integration/staging tree
 ============
+
+http://www.mintcoin.co/
+http://www.mintcoin.us/
 
 Name: MintCoin (MTC)
 
