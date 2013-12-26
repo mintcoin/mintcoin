@@ -1,6 +1,9 @@
 MintCoin
 ============
 
+http://www.mintcoin.co/
+http://www.mintcoin.us/
+
 Name: MintCoin (MTC)
 
 Block Time: 180 Seconds
